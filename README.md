@@ -1,5 +1,7 @@
 # Laryngeal Cancer Detection using Deep Learning
 
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+
 ## Table of Contents
 
 - [Overview](#overview)
@@ -118,6 +120,17 @@ This project demonstrates the effectiveness of different deep learning approache
 - This project refers to the research paper: "An improved approach for initial stage detection of laryngeal cancer using effective hybrid features and ensemble learning method.”
 - [Dataset](https://zenodo.org/records/1003200)
 
----
+## Contributing
+Contributions are welcome! Please feel free to submit a Pull Request or open an Issue for any bugs, feature requests, or improvements.
 
-For any questions or contributions, feel free to contact the repository owner.
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contact
+For any questions or feedback, please contact:
+
+Pranshu Chauhan  
+[Email](mailto:pranshu26092003@example.com)  
+[LinkedIn](https://www.linkedin.com/in/pranshu-chauhan-72921b231)  
+[GitHub](https://github.com/Pranshu-Chauhan)
+
