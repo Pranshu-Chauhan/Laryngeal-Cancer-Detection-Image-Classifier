@@ -1,17 +1,8 @@
 # Laryngeal Cancer Detection using Deep Learning
 
-## Overview
-
-This repository contains the implementation of three different approaches for detecting laryngeal cancer using deep learning techniques. The dataset used for this project can be accessed [here](https://zenodo.org/records/1003200). The three approaches include:
-
-1. Neural Network Approach
-2. Ensemble Learning Approach
-3. DenseNet201-based Approach
-
-Each approach includes detailed preprocessing steps, feature extraction, model training, and evaluation metrics.
-
 ## Table of Contents
 
+- [Overview](#overview)
 - [Dataset](#dataset)
 - [Approach 1: Neural Network Approach](#approach-1-neural-network-approach)
   - [Preprocessing](#preprocessing)
@@ -24,14 +15,19 @@ Each approach includes detailed preprocessing steps, feature extraction, model t
   - [Base Models Training](#base-models-training)
   - [Meta Classifier](#meta-classifier)
   - [Results](#results-1)
-- [Approach 3: DenseNet201-based Approach](#approach-3-densenet201-based-approach)
-  - [Preprocessing](#preprocessing-2)
-  - [Model Architecture](#model-architecture)
-  - [Model Training](#model-training-1)
-  - [Results](#results-2)
 - [Additional Experiments](#additional-experiments)
 - [Conclusion](#conclusion)
 - [References](#references)
+
+## Overview
+
+This repository contains the implementation of three different approaches for detecting laryngeal cancer using deep learning techniques. The dataset used for this project can be accessed [here](https://zenodo.org/records/1003200). The three approaches include:
+
+1. Neural Network Approach
+2. Ensemble Learning Approach
+3. DenseNet201-based Approach
+
+Each approach includes detailed preprocessing steps, feature extraction, model training, and evaluation metrics.
 
 ## Dataset
 
@@ -88,32 +84,6 @@ The dataset used for this project is available on Zenodo: [Laryngeal Cancer Data
 
 - Achieved an accuracy of 99.24%.
 - Classification summary and confusion matrix are provided.
-
-## Approach 3: DenseNet201-based Approach
-
-### Preprocessing
-
-1. Load the dataset.
-2. Divide into train and test sets.
-3. Apply Gaussian Filter for noise removal.
-
-### Model Architecture
-
-1. Import DenseNet201 model.
-2. Drop the inbuilt last classification layer.
-3. Add additional layers:
-   - Average Max Pooling layer.
-   - Dense layer with 1024 neurons.
-   - Softmax layer with 4 neurons for final classifications.
-
-### Model Training
-
-- Unfreeze the last 5 layers for weight updates during training.
-- Use StratifiedKFold cross-validation for training.
-
-### Results
-
-- Detailed evaluation metrics are provided.
 
 ## Additional Experiments
 
