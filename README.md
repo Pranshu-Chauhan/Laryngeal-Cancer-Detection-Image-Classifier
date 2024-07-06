@@ -17,6 +17,10 @@
   - [Base Models Training](#base-models-training)
   - [Meta Classifier](#meta-classifier)
   - [Results](#results-1)
+- [Approach 3: DenseNet201 Model Approach](#approach-2-densenet201-model-approach)
+  - [Preprocessing](#preprocessing)
+  - [Model Training](#base-models-training)
+  - [Results](#results)
 - [Additional Experiments](#additional-experiments)
 - [Conclusion](#conclusion)
 - [References](#references)
@@ -87,7 +91,7 @@ The dataset used for this project is available on Zenodo: [Laryngeal Cancer Data
 - Achieved an accuracy of 99.24%.
 - Classification summary and confusion matrix are provided.
 
-## Approach 3: DenseNet201
+## Approach 3: DenseNet201 Model Approach
 
 ### Preprocessing
 - Load the dataset.
