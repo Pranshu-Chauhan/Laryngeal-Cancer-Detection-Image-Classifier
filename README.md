@@ -87,6 +87,26 @@ The dataset used for this project is available on Zenodo: [Laryngeal Cancer Data
 - Achieved an accuracy of 99.24%.
 - Classification summary and confusion matrix are provided.
 
+## Approach 3: DenseNet201
+
+### Preprocessing
+- Load the dataset.
+- Apply Median Filter followed by Gaussian Filter to remove noise from the images.
+- Display some images before and after filtering.
+
+### Base Models Training
+- Import the DenseNet201 model and drop the inbuilt last classification layer.
+- Add additional layers:
+   - Average Max Pooling layer
+   - Dense layer with 1024 neurons
+   - Fully connected SoftMax layer with 4 neurons for the final 4 classifications
+- Unfreeze the last 5 layers for weight updates during training.
+- Train the model using StratifiedKFold cross-validation.
+
+### Results
+- Achieved an accuracy of 99.42%.
+- Classification summary and confusion matrix are provided.
+
 ## Additional Experiments
 
 - CLAHE Technique + NN-Approach: Accuracy 90%
@@ -102,6 +122,7 @@ The dataset used for this project is available on Zenodo: [Laryngeal Cancer Data
 |----------------------------------|--------------|
 | Neural Network                   | 99.1         |
 | Ensemble Learning                | 99.24        |
+| DenseNet201 Model                | 99.42        |
 | CLAHE Technique + NN Approach    | 90           |
 | Gamma Correction + NN Approach   | 97           |
 | Image Sharpening Technique + NN Approach | 96   |
